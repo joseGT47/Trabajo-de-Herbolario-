@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbolario Digital - Remedios Naturales</title>
+    <style>
+        /* Paleta de colores naturales: Verde y Café */
+        :root {
+            --verde-oscuro: #2d5a27;
+            --verde-claro: #e8f5e9;
+            --cafe-suave: #8d6e63;
+            --blanco: #ffffff;
+            --texto: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--verde-claro);
+            color: var(--texto);
+        }
+
+        header {
+            background-color: var(--verde-oscuro);
+            color: var(--blanco);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: var(--cafe-suave);
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        /* Diseño de Tarjetas (Catálogo) */
+        .plantas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .planta-card {
+            background: var(--blanco);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .planta-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .planta-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .planta-info {
+            padding: 15px;
+        }
+
+        .planta-info h3 {
+            margin: 0 0 10px 0;
+            color: var(--verde-oscuro);
+        }
+
+        .badge {
+            background: var(--verde-claro);
+            color: var(--verde-oscuro);
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: var(--cafe-suave);
+        }
+
+        /* Iconos de salud representados por emojis según la imagen */
+        .health-icon::before {
+            content: "🌿 ";
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Herbolario Digital</h1>
+    <p>Tu guía de salud natural y bienestar</p>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Catálogo</a>
+    <a href="#">Remedios</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<div class="container">
+    <h2 class="health-icon">Catálogo de Plantas Medicinales</h2>
+    <p>Explora nuestra base de datos para conocer beneficios y usos.</p>
+
+    <div class="plantas-grid">
+        <div class="planta-card">
+            <img src="imágenes (14).jpeg" alt="Menta">
+            <div class="planta-info">
+                <span class="badge">Digestiva</span>
+                <h3>Menta (Mentha)</h3>
+                <p>Excelente para problemas digestivos y aliviar dolores de cabeza.</p>
+            </div>
+        </div>
+
+        <div class="planta-card">
+            <img src="https://images.unsplash.com/photo-1595908129746-57ca1a63dd4d?auto=format&fit=crop&w=400&q=80" alt="Lavanda">
+            <div class="planta-info">
+                <span class="badge">Relajante</span>
+                <h3>Lavanda</h3>
+                <p>Utilizada para reducir el estrés, la ansiedad y mejorar el sueño.</p>
+            </div>
+        </div>
+
+        <div class="planta-card">
+            <img src="https://images.unsplash.com/photo-1589227365533-cee630bd59bd?auto=format&fit=crop&w=400&q=80" alt="Manzanilla">
+            <div class="planta-info">
+                <span class="badge">Antinflamatoria</span>
+                <h3>Manzanilla</h3>
+                <p>Ideal para infusiones que calman el estómago y los nervios.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Sistema de Gestión de Herbolaria - Salud Natural</p>
+</footer>
+
+</body>
+</html>
